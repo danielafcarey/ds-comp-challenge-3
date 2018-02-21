@@ -8,6 +8,123 @@
   <title>Binder</title>
 </head>
 <body>
+
+  <nav class="sidebar">
+    <ul class="user-account-menu">
+      <li><img src="#" alt="User profile photo"></li>
+      <li>Bob Dingus</li>
+    </ul>
+    <ul class="user-binder-menu">
+      <li>Dashboard</li>
+      <li>Future Books</li>
+      <li>Current Books</li>
+      <li>Finished Books</li>
+      <li>Analytics</li>
+      <li>Goals</li>
+    </ul>
+    <ul class="user-book-clubs">
+      <li>Eating People is Wrong</li>
+      <li>The Manly Art of Knitting</li>
+      <li>Old Tractors</li>
+    </ul>
+    <ul class="community-menu">
+      <li>Book Feed</li>
+      <li>Friends</li>
+      <li>Book Clubs</li>
+    </ul>
+  </nav>
+
+  <header>
+    <button class="toggle-side-bar-button"></button> 
+    <input type="textbox" placeholder="Search for a book" />
+    <button class="add-book-button"></button>
+    <button class="messages-button"></button>
+    <button class="add-rating-button"></button>
+    <section class="dashboard-header">
+      <article class="user-info">
+        <h1>Bob Dingus</h1>
+        <img class="badge-icon" src="">
+        <p>Level 5</p>
+        <a href="#">See Ratings</a>
+      </article>
+      <article class="dashboard-buttons">
+        <button class="add-bookmark-button">
+          <img src="#" alt="">
+        </button>
+        <button class="add-note-button">
+          <img src="#" alt="">
+        </button>
+        <button class="add-rating-button">
+          <img src="#" alt="">
+        </button>
+      </article>
+    </section>
+    <nav class="dashboard-nav">
+      <ul>
+        <li>Summary</li>
+        <li>Current Book</li>
+        <li>Reviews</li>
+        <li>Bookmarks</li>
+        <li>Notes</li>
+        <li>Analytics</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="charts">
+      <article class="piechart1"></article>
+      <article class="piechart2"></article>
+      <article class="piechart3"></article>
+      <article class="bar-graph"></article>
+      <article class="chart-buttons"></article>
+        <button class="piechart-button"></button>
+        <button class="bargraph-button"></button>
+    </section>
+    <section class="current-book">
+      <table class="book-review">
+        <tr class="table-heading-row">
+          <th class="table-column-1">BOOK TITLE</th>
+          <th class="table-column-2"><button class="edit-book-review-button"></button></th>
+        </tr>
+        <tr>
+          <td class="table-column-1">BOOK AUTHOR</td>
+          <td class="table-column-1">Author Name</td>
+        </tr>
+        <tr>
+          <td class="table-column-1">BOOK GENRE</td>
+          <td class="table-column-1">Book Genre</td>
+        </tr>
+        <tr>
+          <td class="table-column-1">USER RATING</td>
+          <td class="table-column-1">User rating</td>
+        </tr>
+        <tr>
+          <td class="table-column-1">USER REVIEW</td>
+          <td>User review. This is a long review that takes up multiple lines because it is a paragraph that the user writes about the book for other users to see and read and decide if they want to read the book. </td>
+        </tr>
+      </table>
+      <article class="social">
+        <button class="facebook-button"></button>
+        <button class="twitter-button"></button>
+        <button class="instagram-button"></button>
+        <article class="start-bookclub">
+          <img class="bookclub-icon" src="">
+          <h3>Start a bookclub</h3>
+          <p>Info about starting a bookclub</p>
+          <input class="start-bookclub-link" type="textbox" />
+          <button class="copy-bookclub-link"></button>
+        </article>
+        <article class="share-with-friend">
+          <img class="email-icon" src="">
+          <h3>Share with friend</h3>
+          <p>Info about sharing this book with your friends</p>
+          <input class="share-with-friend-link" type="textbox" />
+          <button class="email-to-friend-button"></button>
+        </article>
+      </article>
+    </section>
+  </main>
   
 </body>
 </html>
