@@ -1,0 +1,70 @@
+body {
+  display: grid;
+  grid-template-rows: 200px calc(100% - 200px);
+  grid-template-columns: 100px calc(100% - 100px);
+}
+
+  .sidebar {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+    /*style sidebard grid here*/
+
+  header {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+    /*style header grid here*/
+
+  main {
+    grid-area: 2 / 2 / 3 / 3;
+    margin: 10px;
+
+    display: grid;
+    grid-template-rows: 300px calc(100% - 300px);
+  }
+
+    .charts {
+      grid-area: 1 / 1 / 2 / 2;
+
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+      .piechart1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .piechart2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .piechart3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      .bar-graph {
+        grid-area: 1 / 4 / 2 / 6;
+      }
+
+      .piechart-button {
+        grid-area: 2 / 1 / 3 / 4;
+      }
+
+      .bargraph-button {
+        grid-area: 2 / 4 / 3 / 6;
+      }
+
+    .current-book {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+      
+      /*style current-book grid here*/
+
+        /*style book-review grid here*/
+        /*style social grid here*/
+
+
+
+
