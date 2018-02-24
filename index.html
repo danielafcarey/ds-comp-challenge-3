@@ -5,41 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700" rel="stylesheet">
   <title>Binder</title>
 </head>
 <body>
 
   <nav class="sidebar">
-    <ul class="user-account-menu">
-      <li><img src="#" alt="User profile photo"></li>
-      <li>Bob Dingus</li>
-    </ul>
+    <img class="user-account-menu profile-photo" src="assets/dog.jpg" alt="User profile photo">
+    <p class="user-account-menu">Bob Dingus<img class="account-drop-down" src="assets/user-account.png"></p>
+    <hr/>
+    <h6>Your Binder</h6>
     <ul class="user-binder-menu">
-      <li>Dashboard</li>
-      <li>Future Books</li>
-      <li>Current Books</li>
-      <li>Finished Books</li>
-      <li>Analytics</li>
-      <li>Goals</li>
+      <li><img src="assets/dashboard.png">Dashboard</li>
+      <li><img src="assets/future-books.png">Future Books</li>
+      <li><img src="assets/current-books.png">Current Books</li>
+      <li><img src="assets/finished-books.png">Finished Books</li>
+      <li><img src="assets/analytics.png">Analytics</li>
+      <li><img src="assets/goals.png">Goals</li>
     </ul>
-    <ul class="user-book-clubs">
-      <li>Eating People is Wrong</li>
-      <li>The Manly Art of Knitting</li>
-      <li>Old Tractors</li>
-    </ul>
+    <hr/>
+    <h6>Community</h6>
     <ul class="community-menu">
-      <li>Book Feed</li>
-      <li>Friends</li>
-      <li>Book Clubs</li>
+      <li><img src="assets/feed.png">Book Feed</li>
+      <li><img src="assets/friends.png">Friends</li>
+      <li><img src="assets/book-clubs.png">Book Clubs</li>
+    </ul>
+    <hr/>
+    <h6>Your Book Clubs</h6>
+    <ul class="user-book-clubs">
+      <li><img src="assets/book-club1.png">Eating People is Wrong</li>
+      <li><img src="assets/book-club2.png">The Manly Art of Knitting</li>
+      <li><img src="assets/book-club3.png">Old Tractors</li>
     </ul>
   </nav>
 
   <header>
-    <button class="toggle-side-bar-button"></button> 
-    <input type="textbox" placeholder="Search for a book" />
-    <button class="add-book-button"></button>
-    <button class="messages-button"></button>
-    <button class="add-rating-button"></button>
+    <section class="top-bar-container">
+      <button class="toggle-sidebar-button"></button> 
+      <input class="book-search" type="text" placeholder="Search for a book" />
+      <button class="add-book-button"></button>
+      <button class="messages-button"></button>
+      <button class="settings-button"></button>
+    </section>
     <section class="dashboard-header">
       <article class="user-info">
         <h1>Bob Dingus</h1>
@@ -49,13 +56,13 @@
       </article>
       <article class="dashboard-buttons">
         <button class="add-bookmark-button">
-          <img src="#" alt="">
+          <img src="assets/bookmark.png" alt="Add bookmark">
         </button>
         <button class="add-note-button">
-          <img src="#" alt="">
+          <img src="assets/note.png" alt="Add note">
         </button>
         <button class="add-rating-button">
-          <img src="#" alt="">
+          <img src="assets/rating.png" alt="Add rating">
         </button>
       </article>
     </section>

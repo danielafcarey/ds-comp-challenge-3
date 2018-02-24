@@ -1,24 +1,189 @@
+/*dark-green: #313732
+-teal: #059D8E
+light-grey: #DEDEDE
+-orange: #F26101 */
+
+
 body {
   display: grid;
-  grid-template-rows: 200px calc(100% - 200px);
-  grid-template-columns: 100px calc(100% - 100px);
+  grid-template-rows: 250px calc(100% - 200px);
+  grid-template-columns: 200px calc(100% - 200px);
+  font-family: 'Muli', sans-serif;
 }
 
   .sidebar {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #313732;
+    color: #a9a9a9;
+    font-size: 13px;
+    font-weight: bold;
   }
+   
+    .sidebar p {
+     text-align: center;
+     margin-bottom: 30px;
+    }
 
-    /*style sidebard grid here*/
+    h6 {
+      padding-left: 15px;
+      color: #a9a9a97d;
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      text-transform: uppercase;
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    .sidebar li {
+      padding: 8px 8px 8px 15px;
+      line-height: 1.5;
+    }
+
+    .sidebar .account-drop-down {
+      width: 17px;
+      padding-left: 10px;
+      margin-bottom: -3px;
+    }
+
+    ul img {
+      height: 18px;
+      padding-right: 13px;
+      margin-bottom: -3px;
+    }
+
+    .sidebar hr {
+      border-color: #271d1d7d;
+      border-top: 1px;
+      color:;
+    }
+
+    .user-account-menu li {
+      text-transform: none;
+      margin: px;
+      text-align: center;
+      padding-top: 0;
+    }
+
+    .sidebar .profile-photo {
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 29px;
+      margin-left: 48px;
+    }
+
+    .user-book-clubs li {
+      font-weight: 300;
+      text-transform: none;
+    }
 
   header {
     grid-area: 1 / 2 / 2 / 3;
+    background-color: #FFF;
   }
 
-    /*style header grid here*/
+    .top-bar-container {
+      display: grid;
+      grid-template-rows: 75px;
+      grid-template-columns: 75px calc(100% - 300px) 75px 75px 75px;
+    }
+
+      .toggle-sidebar-button {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #cccccc;
+        background-image: url("assets/sidebar-toggle-icon.png") no-repeat;
+      }
+
+      .book-search {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .book-search::placeholder {
+        padding-left: 20px;
+        font-size: 20px;
+        color: #a9a9a97d;
+      }
+
+      .add-book-button {
+        grid-area: 1 / 3 / 2 / 4;
+        background: none;
+        background-image: url("assets/add-book.png") no-repeat;
+      }
+
+      .messages-button {
+        grid-area: 1 / 4 / 2 / 5;
+        background: none;
+        background-image: url("assets/messages.png") no-repeat;
+      }
+
+      .settings-button {
+        grid-area: 1 / 5 / 2 / 6;
+        background: none;
+        background-image: url("assets/settings.png") no-repeat;
+      }
+
+    .user-info {
+      display: inline-block;
+    }
+
+    header h1 {
+      margin: 25px 0 0 25px;
+    }
+
+    header p {
+      display: inline-block;
+      padding-left: 23px;
+      margin-top: 13px;
+    }
+
+    header a {
+      display: inline-block;
+    }
+
+    .dashboard-buttons {
+      display: inline-block;
+      float: right;
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+
+    .dashboard-buttons button {
+      border-radius: 50%;
+      /* border: #a9a9a9; */
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .dashboard-buttons img {
+      height: 21px;
+      margin: 5px 0 0 2px;
+    }
+
+    header ul {
+      padding-left: 0;
+      margin: 35px 0 10px 0;
+    }
+
+    header li {
+      list-style: none;
+      display: inline;
+      padding-left: 30px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    
 
   main {
     grid-area: 2 / 2 / 3 / 3;
-    margin: 10px;
+    padding: 10px;
+    background-color: #DEDEDE;
 
     display: grid;
     grid-template-rows: 300px calc(100% - 300px);
