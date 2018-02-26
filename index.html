@@ -58,9 +58,8 @@
     <section class="dashboard-header">
       <article class="user-info">
         <h1>Bob Dingus</h1>
-        <img class="badge-icon" src="">
-        <p>Level 5</p>
-        <a href="#">See Ratings</a>
+        <img class="badge-icon" src="assets/badge-icon.png">
+        <p>Level 5 - <a href="#">See Ratings</a></p>
       </article>
       <article class="dashboard-buttons">
         <button class="add-bookmark-button">
@@ -88,13 +87,54 @@
 
   <main>
     <section class="charts">
-      <article class="piechart1"></article>
-      <article class="piechart2"></article>
-      <article class="piechart3"></article>
+      <svg class="piechart current-book-completed" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-pages-read">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2a80b9" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="75"></circle>
+        <g class="chart-text" id="total-pages-read">
+          <text x="50%" y="50%" class="chart-number">
+            9,094
+          </text>
+          <text x="50%" y="50%" class="chart-label">
+            Pages
+          </text>
+        </g>
+      </svg>
+      <svg class="piechart total-books-read" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-books-read">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#F26101" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="75"></circle>
+        <g class="chart-text" id="total-books-read">
+          <text x="50%" y="50%" class="chart-number">
+            26
+          </text>
+          <text x="50%" y="50%" class="chart-label">
+            Books
+          </text>
+        </g>
+      </svg>
+      <svg class="piechart total-reviews-written"  width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-reviews-written">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#059D8E" stroke-width="3" stroke-dasharray="73 27" stroke-dashoffset="75"></circle>
+        <g class="chart-text" id="total-reviews-written">
+          <text x="50%" y="50%" class="chart-number">
+            19
+          </text>
+          <text x="50%" y="50%" class="chart-label">
+            Reviews
+          </text>
+        </g>
+      </svg>
       <article class="bar-graph"></article>
-      <button class="piechart-button">TOTALS - Out of 405 books</button>
+      <button class="piechart-button">TOTALS - Out of 85 books on your list</button>
       <button class="bargraph-button">BOOKS/MONTH</button>
     </section>
+    <div class="divider">
+      <hr>
+      <button><img src="assets/up-arrow.png"></button>
+      <hr>
+    </div>
     <section class="current-book-review">
       <table class="book-review">
         <tr class="table-heading-row">
@@ -131,19 +171,20 @@
       <button class="share-button instagram-button">
         <img src="assets/instagram.png">Share on Instagram
       </button>
-      <article class="start-bookclub">
+      <article class="share-links start-bookclub">
         <img class="bookclub-icon" src="">
         <h3>Start a bookclub</h3>
-        <p>Info about starting a bookclub</p>
-        <input class="start-bookclub-link" type="textbox" />
-        <button class="copy-bookclub-link"></button>
+        <p>Depths superiority insofar hope burying justice law good. Christian value ubermensch suicide spirit derive evil faith ocean</p>
+        <input class="start-bookclub-link" type="textbox" placeholder="http://www.binder.com/share-with-friends"/>
+        <button class="copy-bookclub-link">Copy</button>
       </article>
-      <article class="share-with-friend">
+      <hr>
+      <article class="share-links share-with-friend">
         <img class="email-icon" src="">
         <h3>Share with friend</h3>
-        <p>Info about sharing this book with your friends</p>
-        <input class="share-with-friend-link" type="textbox" />
-        <button class="email-to-friend-button"></button>
+        <p>Battle of salvation love truth will holiest. Free will ascetic enlightenment prejudice ultimate zarathustra spirit</p>
+        <input class="share-with-friend-link" type="textbox" placeholder="http://www.binder.com/share-with-friends"/>
+        <button class="email-to-friend-button">Copy</button>
       </article>
     </section>
   </main>
