@@ -13,9 +13,36 @@
 }
 
 @media only screen and (max-width: 870px) {
+  .dashboard-buttons {
+    margin: 110px 20px 0 0;
+  }
+
+  header ul {
+    background-color: #fff;
+  }
+
+  header li {
+    display: block;
+    padding: 3px 0 10px 30px;
+    position: relative;
+    background-color: #fff;
+    width: 145px;
+  } 
+
+  header li img {
+    display: inline-block;
+  }
+
+  header li.not-selected {
+    display: none;
+  }
+
+  header ul:hover li.not-selected {
+    display: block;
+  }
   main {
     grid-template-rows: 400px 375px 1fr;
-    padding: 0 5%;
+    padding: 0;
   }
 
   .charts {
@@ -59,45 +86,43 @@
 
   .social {
     grid-area: 4 / 1 / 5 / 3;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 0;
   }
 
-}
-
-@media only screen and (max-width: 870px) {
-  .dashboard-buttons {
-    margin: 110px 20px 0 0;
-  }
-
-  header ul {
-    background-color: #fff;
-  }
-
-  header li {
-    display: block;
-    padding: 3px 0 10px 30px;
-    position: relative;
-    background-color: #fff;
-    width: 145px;
-  } 
-
-  header li img {
+  .share-button {
+    width: 54px;
     display: inline-block;
+    color: transparent;
+    margin: 5px 5px 15px 5px;
   }
 
-  header li.not-selected {
-    display: none;
+  .share-button img {
+    float: none;
+    padding-top: 13px;
+    padding-left: 2px;
   }
 
-  header ul:hover li.not-selected {
-    display: block;
+  .center-buttons {
+    margin-right:auto;
+    margin-left: auto;
+    width: 201px;
+    margin-bottom: 10px;
   }
 
 }
 
 
 @media only screen and (max-width: 500px) {
+  .add-book-button,
+  .messages-button,
+  .settings-button {
+    display: none;
+  }
+
+  .book-search { 
+    grid-area: 1 / 2 / 2 / 6;
+  }
+
   main {
     grid-template-rows: 400px 190px 1fr;
   }
@@ -113,6 +138,10 @@
 
   .charts svg {
     height: 50%;
+  }
+
+  .table-column-1 {
+    width: 20px;
   }
 }
 
