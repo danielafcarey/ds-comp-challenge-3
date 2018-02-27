@@ -62,6 +62,30 @@
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+@media only screen and (max-width: 870px) {
+  header ul {
+    background-color: #fff;
+  }
+
+  header li {
+    display: block;
+    padding: 3px 0 10px 30px;
+  } 
+
+  header li img {
+    display: inline-block;
+  }
+
+  header li.not-selected {
+    display: none;
+  }
+
+  header ul:hover li.not-selected {
+    display: block;
+  }
+
 
 
 }
