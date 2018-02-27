@@ -117,15 +117,17 @@ header {
 
       header button:hover {
         cursor: pointer;
-        background-color: #a9a9a93b
+        background-color: #a9a9a91f
       }
 
       .book-search {
         grid-area: 1 / 2 / 2 / 3;
+        padding-left: 15px;
       }
 
       .book-search::placeholder {
-        padding-left: 20px;
+        background: url(assets/search-icon.png) no-repeat;
+        padding-left: 40px;
         font-size: 20px;
         color: #a9a9a97d;
       }
@@ -225,6 +227,10 @@ main {
     grid-template-columns: 2fr 1fr;
   }
 
+  main button:hover {
+    cursor: pointer;
+  }
+
 /*charts styles in the charts-styles.css file*/
 
 
@@ -313,6 +319,19 @@ main {
         border-bottom: 1px solid #ddd;
       }
 
+      .star-rating {
+          direction: rtl;
+          color: #2a80b9;
+          text-align: left;
+       }
+
+        .star-rating span:hover:before,
+        .star-rating span:hover ~ span:before {
+           content: "\2605";
+           position: absolute;
+           color: #2a80b9;
+        }
+
 
 /*social-styles*/
 .social {
@@ -341,12 +360,25 @@ main {
         background-color: #4b70c1;
       }
 
+      .facebook-button:hover {
+        background-color: #4060a5fa;
+
+      }
+
       .twitter-button {
         background-color: #00a8ef;
       }
 
+      .twitter-button:hover {
+        background-color: #0197d6;
+      }
+
       .instagram-button {
         background-color: #e95950;
+      }
+
+      .instagram-button:hover {
+        background-color: #d45148;
       }
 
       .share-links {
@@ -379,6 +411,7 @@ main {
         padding: 0;
         padding-left: 10px;
         color: #a9a9a9;
+        border: none;
       }
 
       .share-links button {
@@ -387,6 +420,11 @@ main {
         margin: 0;
         background-color: #059D8E;
         color: #fff;
+        border: none;
+      }
+
+      .share-links button:hover {
+        background-color: #048276;
       }
 
       .social hr {
