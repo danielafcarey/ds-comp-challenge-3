@@ -189,6 +189,11 @@ header {
       font-weight: bold;
     }
 
+    header li img {
+      display: none;
+      padding-left: 8px;
+    }
+
 main {
     grid-area: 2 / 2 / 3 / 3;
     padding: 10px;
@@ -201,14 +206,14 @@ main {
 /*charts styles in the charts-styles.css file*/
 
 
-/*table styles*/
-.divider {
+
+  .divider {
       grid-area: 2 / 1 / 3 / 3;
       margin: 0 20px;
     }
 
       .divider img {
-          height: 34px;
+        height: 34px;
       }
 
       .divider hr {
@@ -225,6 +230,9 @@ main {
         border: none;
       }
 
+
+
+/*table styles*/
     .current-book-review {
       grid-area: 2 / 1 / 3 / 2;
       padding: 19px;
@@ -323,16 +331,18 @@ main {
         display: grid;
         grid-template-rows: 40% 40% 20%;
         grid-template-columns: 75% 25%;
-        margin-bottom: 27px;
       }
 
       .share-links img {
         grid-area: 1 / 1 / 2 / 3;
+        margin-top: 16px;
+        width: 24px;
       }
 
       .share-links h3 {
         grid-area: 1 / 1 / 2 / 3;
         margin-bottom: 5px;
+        margin-left: 34px;
       }
 
       .share-links p {
@@ -355,6 +365,12 @@ main {
         margin: 0;
         background-color: #059D8E;
         color: #fff;
+      }
+
+      .social hr {
+        margin-top: 30px;
+        border: none;
+        border-top: 1px solid #ccc;
       }
 
 
