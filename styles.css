@@ -26,9 +26,14 @@ body {
      margin-bottom: 30px;
     }
 
+    .user-account-menu:hover {
+      cursor: pointer;
+      color: #f3f3f3;
+    }
+
     h6 {
       padding-left: 15px;
-      color: #a9a9a97d;
+      color: #d4d3d37d;
       margin-bottom: 10px;
       font-size: 11px;
     }
@@ -45,7 +50,13 @@ body {
       line-height: 1.5;
     }
 
-    .sidebar .account-drop-down {
+    .sidebar li:hover {
+       cursor: pointer;
+       color: #f3f3f3;
+       background-color: #0a0c0a78;
+    }
+
+    .account-drop-down {
       width: 17px;
       padding-left: 10px;
       margin-bottom: -3px;
@@ -104,12 +115,19 @@ header {
         background: none;
       }
 
+      header button:hover {
+        cursor: pointer;
+        background-color: #a9a9a91f
+      }
+
       .book-search {
         grid-area: 1 / 2 / 2 / 3;
+        padding-left: 15px;
       }
 
       .book-search::placeholder {
-        padding-left: 20px;
+        background: url(assets/search-icon.png) no-repeat;
+        padding-left: 40px;
         font-size: 20px;
         color: #a9a9a97d;
       }
@@ -177,16 +195,22 @@ header {
 
     header ul {
       padding-left: 0;
-      margin: 35px 0 10px 0;
+      margin: 35px 0 0 0;
     }
 
     header li {
       list-style: none;
       display: inline;
-      padding-left: 30px;
+      margin-left: 30px;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: bold;
+    }
+
+    header li:hover {
+      cursor: pointer;
+      padding-bottom: 10px;
+      border-bottom: solid 3px #2a80b9;
     }
 
     header li img {
@@ -201,6 +225,10 @@ main {
     display: grid;
     grid-template-rows: 300px calc(100% - 300px);
     grid-template-columns: 2fr 1fr;
+  }
+
+  main button:hover {
+    cursor: pointer;
   }
 
 /*charts styles in the charts-styles.css file*/
@@ -291,6 +319,19 @@ main {
         border-bottom: 1px solid #ddd;
       }
 
+      .star-rating {
+          direction: rtl;
+          color: #2a80b9;
+          text-align: left;
+       }
+
+        .star-rating span:hover:before,
+        .star-rating span:hover ~ span:before {
+           content: "\2605";
+           position: absolute;
+           color: #2a80b9;
+        }
+
 
 /*social-styles*/
 .social {
@@ -319,12 +360,25 @@ main {
         background-color: #4b70c1;
       }
 
+      .facebook-button:hover {
+        background-color: #4060a5fa;
+
+      }
+
       .twitter-button {
         background-color: #00a8ef;
       }
 
+      .twitter-button:hover {
+        background-color: #0197d6;
+      }
+
       .instagram-button {
         background-color: #e95950;
+      }
+
+      .instagram-button:hover {
+        background-color: #d45148;
       }
 
       .share-links {
@@ -357,6 +411,7 @@ main {
         padding: 0;
         padding-left: 10px;
         color: #a9a9a9;
+        border: none;
       }
 
       .share-links button {
@@ -365,6 +420,11 @@ main {
         margin: 0;
         background-color: #059D8E;
         color: #fff;
+        border: none;
+      }
+
+      .share-links button:hover {
+        background-color: #048276;
       }
 
       .social hr {
