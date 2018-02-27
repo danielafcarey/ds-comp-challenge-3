@@ -26,9 +26,14 @@ body {
      margin-bottom: 30px;
     }
 
+    .user-account-menu:hover {
+      cursor: pointer;
+      color: #f3f3f3;
+    }
+
     h6 {
       padding-left: 15px;
-      color: #a9a9a97d;
+      color: #d4d3d37d;
       margin-bottom: 10px;
       font-size: 11px;
     }
@@ -45,7 +50,13 @@ body {
       line-height: 1.5;
     }
 
-    .sidebar .account-drop-down {
+    .sidebar li:hover {
+       cursor: pointer;
+       color: #f3f3f3;
+       background-color: #0a0c0a78;
+    }
+
+    .account-drop-down {
       width: 17px;
       padding-left: 10px;
       margin-bottom: -3px;
