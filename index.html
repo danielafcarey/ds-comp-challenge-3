@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="charts-styles.css">
+  <link rel="stylesheet" href="responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700" rel="stylesheet">
   <title>Binder</title>
 </head>
@@ -126,7 +128,44 @@
           </text>
         </g>
       </svg>
-      <article class="bar-graph"></article>
+      <article class="bar-graph">
+        <div class="bar-graph-col col-jan"></div>
+        <div class="bar-graph-col-background bar1"></div>
+        <div class="bar-graph-col col-feb"></div>
+        <div class="bar-graph-col-background bar2"></div>
+        <div class="bar-graph-col col-mar"></div>
+        <div class="bar-graph-col-background bar3"></div>
+        <div class="bar-graph-col col-apr"></div>
+        <div class="bar-graph-col-background bar4"></div>
+        <div class="bar-graph-col col-may"></div>
+        <div class="bar-graph-col-background bar5"></div>
+        <div class="bar-graph-col col-jun"></div>
+        <div class="bar-graph-col-background bar6"></div>
+        <div class="bar-graph-col col-jul"></div>
+        <div class="bar-graph-col-background bar7"></div>
+        <div class="bar-graph-col col-aug"></div>
+        <div class="bar-graph-col-background bar8"></div>
+        <div class="bar-graph-col col-sep"></div>
+        <div class="bar-graph-col-background bar9"></div>
+        <div class="bar-graph-col col-oct"></div>
+        <div class="bar-graph-col-background bar10"></div>
+        <div class="bar-graph-col col-nov"></div>
+        <div class="bar-graph-col-background bar11"></div>
+        <div class="bar-graph-col col-dec"></div>
+        <div class="bar-graph-col-background bar12"></div>
+        <p class="bar-graph-label label-jan">J</p> 
+        <p class="bar-graph-label label-feb">F</p>
+        <p class="bar-graph-label label-mar">M</p>
+        <p class="bar-graph-label label-apr">A</p>
+        <p class="bar-graph-label label-may">M</p>
+        <p class="bar-graph-label label-jun">J</p>
+        <p class="bar-graph-label label-jul">J</p>
+        <p class="bar-graph-label label-aug">A</p>
+        <p class="bar-graph-label label-sep">S</p>
+        <p class="bar-graph-label label-oct">O</p>
+        <p class="bar-graph-label label-nov">N</p>
+        <p class="bar-graph-label label-dec">D</p>
+      </article>
       <button class="piechart-button">TOTALS - Out of 85 books on your list</button>
       <button class="bargraph-button">BOOKS/MONTH</button>
     </section>
@@ -138,9 +177,9 @@
     <section class="current-book-review">
       <table class="book-review">
         <tr class="table-heading-row">
-          <th>BOOK REVIEW</th>
-          <th>Eating People Is Wrong
-            <button class="edit-book-review-button">EDIT</button>
+          <th class="table-column-1">BOOK REVIEW</th>
+          <th class="table-column-2">Eating People Is Wrong
+            <button class="edit-book-review-button"><img src="assets/edit-icon.png" alt="Edit icon">EDIT</button>
           </th>
         </tr>
         <tr>
@@ -175,7 +214,7 @@
         <img class="bookclub-icon" src="">
         <h3>Start a bookclub</h3>
         <p>Depths superiority insofar hope burying justice law good. Christian value ubermensch suicide spirit derive evil faith ocean</p>
-        <input class="start-bookclub-link" type="textbox" placeholder="http://www.binder.com/share-with-friends"/>
+        <input class="start-bookclub-link" type="textbox" value="http://www.binder.com/share-with-friends"/>
         <button class="copy-bookclub-link">Copy</button>
       </article>
       <hr>
@@ -183,7 +222,7 @@
         <img class="email-icon" src="">
         <h3>Share with friend</h3>
         <p>Battle of salvation love truth will holiest. Free will ascetic enlightenment prejudice ultimate zarathustra spirit</p>
-        <input class="share-with-friend-link" type="textbox" placeholder="http://www.binder.com/share-with-friends"/>
+        <input class="share-with-friend-link" type="textbox" value="http://www.binder.com/share-with-friends"/>
         <button class="email-to-friend-button">Copy</button>
       </article>
     </section>

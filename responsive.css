@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1054px) {
+  .sidebar {
+    display: none;
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  main {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  main {
+    grid-template-rows: 400px 375px 1fr;
+    padding: 0 5%;
+  }
+
+  .charts {
+    grid-template-rows: 300px 1fr 300px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .current-book-completed {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .total-books-read {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .total-reviews-written {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .piechart-button {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+
+  .bar-graph {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+
+  .bargraph-button {
+    grid-area: 4 / 1 / 5 / 4;
+  }
+
+  .divider {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .current-book-review {
+    grid-area: 3 / 1 / 4 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .social {
+    grid-area: 4 / 1 / 5 / 3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+}

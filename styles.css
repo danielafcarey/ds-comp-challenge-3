@@ -3,16 +3,17 @@
 light-grey: #DEDEDE
 -orange: #F26101 */
 
-
 body {
   display: grid;
   grid-template-rows: 250px calc(100% - 200px);
   grid-template-columns: 200px calc(100% - 200px);
   font-family: 'Muli', sans-serif;
   color: #313732;
+  on grid: .sidebar, header, .main;
 }
 
-  .sidebar {
+/*sidebar-styles*/
+.sidebar {
     grid-area: 1 / 1 / 3 / 2;
     background-color: #313732;
     color: #a9a9a9;
@@ -81,7 +82,9 @@ body {
       text-transform: none;
     }
 
-  header {
+
+/*header styles*/
+header {
     grid-area: 1 / 2 / 2 / 3;
     background-color: #FFF;
   }
@@ -186,87 +189,21 @@ body {
       font-weight: bold;
     }
 
-    
-
-  main {
+main {
     grid-area: 2 / 2 / 3 / 3;
     padding: 10px;
-    background-color: #DEDEDE;
-
+    background-color: #dedede99;
     display: grid;
     grid-template-rows: 300px calc(100% - 300px);
     grid-template-columns: 2fr 1fr;
   }
 
-    .charts {
-      grid-area: 1 / 1 / 2 / 3;
+/*charts styles in the charts-styles.css file*/
 
-      display: grid;
-      grid-template-rows: 2fr 1fr;
-      grid-template-columns: repeat(5, 1fr);
-    }
 
-      .piechart1 {
-        grid-area: 1 / 1 / 2 / 2;
-      }
-
-      .piechart2 {
-        grid-area: 1 / 2 / 2 / 3;
-      }
-
-      .piechart3 {
-        grid-area: 1 / 3 / 2 / 4;
-      }
-
-      .bar-graph {
-        grid-area: 1 / 4 / 2 / 6;
-      }
-
-      .chart-text {
-        font-size: 16px;
-        fill: grey;
-        transform: translateY(0.25em);
-      }
-
-      .chart-number {
-        font-size: 0.5em;
-        text-anchor: middle;
-        transform: translateY(-0.4em);
-      }
-
-      .chart-label {
-        font-size: 0.2em;
-        text-transform: uppercase;
-        text-anchor: middle;
-        transform: translateY(0.7em);
-      }
-
-      .donut-segment {
-        stroke-linecap: round;
-      }
-
-      .piechart-button {
-        grid-area: 2 / 1 / 3 / 4;
-      }
-
-      .charts button {
-        background: none;
-        border-radius: 35px;
-        height: 35px;
-        text-align: center;
-        margin: 25px auto;
-        background-color: #fff;
-        font-size: 13px;
-        padding: 0 14px;
-        font-weight: 600;
-      }
-
-      .bargraph-button {
-        grid-area: 2 / 4 / 3 / 6;
-      }
-
-    .divider {
-      grid-area: 2 / 1 / 2 / 3;
+/*table styles*/
+.divider {
+      grid-area: 2 / 1 / 3 / 3;
       margin: 0 20px;
     }
 
@@ -305,6 +242,7 @@ body {
 
       .table-column-2 {
         font-weight: 400;
+        font-size: 16px;
       }
 
       th {
@@ -314,22 +252,40 @@ body {
         text-align: left;
       }
 
+      th.table-column-2 {
+        font-weight: 700;
+        line-height: 1.8;
+      }
+
       th button {
         float: right;
+        background-color: #adabab;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 6px 9px;
+      }
+
+      th button img {
+        height: 13px;
+        padding-right: 5px;
       }
 
       th, 
       td {
         height: 30px;
         padding: 20px;
-        font-size: 14px;
+        font-size: 14px; 
       }
 
       td {
         border-bottom: 1px solid #ddd;
       }
 
-    .social {
+
+/*social-styles*/
+.social {
       grid-area: 2 / 2 / 3 / 3;
       padding: 19px;
       margin-top: 30px;
@@ -376,10 +332,12 @@ body {
 
       .share-links h3 {
         grid-area: 1 / 1 / 2 / 3;
+        margin-bottom: 5px;
       }
 
       .share-links p {
         grid-area: 2 / 1 / 3 / 3;
+        margin-bottom: 25px;
       }
 
       .share-links input {
@@ -387,11 +345,8 @@ body {
         width: 100;
         height: 40px;
         padding: 0;
-      }
-
-      .share-links input::placeholder {
         padding-left: 10px;
-        color: #a9a9a97d;
+        color: #a9a9a9;
       }
 
       .share-links button {
@@ -401,16 +356,6 @@ body {
         background-color: #059D8E;
         color: #fff;
       }
-
-
-
-
-
-
-
-
-
-
 
 
 
