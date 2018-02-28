@@ -123,6 +123,10 @@ header {
       .book-search {
         grid-area: 1 / 2 / 2 / 3;
         padding-left: 15px;
+        border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+        border-style: solid;
+        border-width: 1px;
+        /* padding: 1px 7px 2px; */
       }
 
       .book-search::placeholder {
