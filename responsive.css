@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1054px) {
+@media only screen and (max-width: 1084px) {
   .sidebar {
     display: none;
   }
@@ -9,6 +9,7 @@
 
   main {
     grid-area: 2 / 1 / 3 / 3;
+    height: 100%;
   }
 }
 
@@ -40,14 +41,19 @@
   header ul:hover li.not-selected {
     display: block;
   }
+  
   main {
-    grid-template-rows: 400px 375px 1fr;
+    grid-template-rows: 550px 50px 1fr 1fr;
     padding: 0;
   }
 
   .charts {
-    grid-template-rows: 300px 1fr 300px 1fr;
+    grid-template-rows: 200px 1fr 200px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    .charts svg {
+    height: 38%;
   }
 
   .current-book-completed {
@@ -75,7 +81,8 @@
   }
 
   .divider {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 2 / 1 / 3 / 3;
+    grid-template-columns: 44% 12% 44%;
   }
 
   .current-book-review {
@@ -124,7 +131,7 @@
   }
 
   main {
-    grid-template-rows: 400px 190px 1fr;
+    grid-template-rows: 525px 50px 1fr 1fr;
   }
 
   .dashboard-buttons {
@@ -132,12 +139,12 @@
   }
 
   .charts {
-    grid-template-rows: 200px 1fr 200px 1fr;
+    grid-template-rows: 175px 1fr 175px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .charts svg {
-    height: 50%;
+    height: 35%;
   }
 
   .table-column-1 {
@@ -154,6 +161,10 @@
   grid-column-gap: 9px;
   margin-right: auto;
   margin-left: auto;
+  }
+
+    .divider {
+    grid-template-columns: 40% 20% 40%;
   }
 }
   
