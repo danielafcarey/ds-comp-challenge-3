@@ -1,0 +1,69 @@
+.current-book-review {
+  grid-area: 3 / 1 / 4 / 2;
+  padding: 19px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th {
+  width: 150px;
+  background-color: #271d1d7d;
+  color: #fff;
+  text-align: left;
+}
+
+th.table-column-2 {
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+th button {
+  padding: 6px 9px;
+  border: none;
+  background-color: #adabab;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+th button img {
+  height: 13px;
+  padding-right: 5px;
+}
+
+th, 
+td {
+  height: 30px;
+  padding: 20px;
+  font-size: 14px; 
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-column-1 {
+  font-weight: 800;
+}
+
+.table-column-2 {
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.star-rating {
+  direction: rtl;
+  color: #2a80b9;
+  text-align: left;
+}
+
+.star-rating span:hover:before,
+.star-rating span:hover ~ span:before {
+  position: absolute;
+  content: "\2605";
+  color: #2a80b9;
+}
