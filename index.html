@@ -10,74 +10,72 @@
   <title>Binder</title>
 </head>
 <body>
-
-  <nav class="sidebar">
+  <nav class="sidebar" id="sidebar-menu" aria-label="Main menu">
     <img class="user-account-menu profile-photo" src="assets/dog.jpg" alt="User profile photo">
-    <p class="user-account-menu">Bob Dingus<img class="account-drop-down" src="assets/user-account.png"></p>
-    <hr/>
+    <button class="user-account-menu" aria-expanded="false" aria-label="User account menu">Bob Dingus <img class="account-drop-down" src="assets/user-account.png" aria-hidden="true"></button>
+    <hr aria-hidden="true"/>
     <h6>Your Binder</h6>
     <ul class="user-binder-menu">
-      <li><img src="assets/dashboard.png">Dashboard</li>
-      <li><img src="assets/future-books.png">Future Books</li>
-      <li><img src="assets/current-books.png">Current Books</li>
-      <li><img src="assets/finished-books.png">Finished Books</li>
-      <li><img src="assets/analytics.png">Analytics</li>
-      <li><img src="assets/goals.png">Goals</li>
+      <li><img src="assets/dashboard.png" aria-hidden="true">Dashboard</li>
+      <li><img src="assets/future-books.png" aria-hidden="true">Future Books</li>
+      <li><img src="assets/current-books.png" aria-hidden="true">Current Books</li>
+      <li><img src="assets/finished-books.png" aria-hidden="true">Finished Books</li>
+      <li><img src="assets/analytics.png" aria-hidden="true">Analytics</li>
+      <li><img src="assets/goals.png" aria-hidden="true">Goals</li>
     </ul>
-    <hr/>
+    <hr aria-hidden="true"/>
     <h6>Community</h6>
     <ul class="community-menu">
-      <li><img src="assets/feed.png">Book Feed</li>
-      <li><img src="assets/friends.png">Friends</li>
-      <li><img src="assets/book-clubs.png">Book Clubs</li>
+      <li><img src="assets/feed.png" aria-hidden="true">Book Feed</li>
+      <li><img src="assets/friends.png" aria-hidden="true">Friends</li>
+      <li><img src="assets/book-clubs.png" aria-hidden="true">Book Clubs</li>
     </ul>
-    <hr/>
+    <hr aria-hidden="true"/>
     <h6>Your Book Clubs</h6>
     <ul class="user-book-clubs">
-      <li><img src="assets/book-club1.png">Eating People is Wrong</li>
-      <li><img src="assets/book-club2.png">The Manly Art of Knitting</li>
-      <li><img src="assets/book-club3.png">Old Tractors</li>
+      <li><img src="assets/book-club1.png" aria-hidden="true">Eating People is Wrong</li>
+      <li><img src="assets/book-club2.png" aria-hidden="true">The Manly Art of Knitting</li>
+      <li><img src="assets/book-club3.png" aria-hidden="true">Old Tractors</li>
     </ul>
   </nav>
-
   <header>
     <section class="top-bar-container">
-      <button class="toggle-sidebar-button">
+      <button class="toggle-sidebar-button" aria-controls="sidebar-menu" aria-expanded="true" aria-label="Toggle sidebar navigation menu">
         <img class="toggle-sidebar-icon" src="assets/sidebar-toggle-icon.png">
       </button> 
-      <input class="book-search" type="text" placeholder="Search for a book" />
-      <button class="add-book-button">
+      <input class="book-search" type="text" placeholder="Search for a book" role=”search” />
+      <button class="add-book-button" aria-label="Add a book">
         <img class="add-book-icon" src="assets/add-book.png">
       </button>
-      <button class="messages-button">
+      <button class="messages-button" aria-label="View messages">
         <img class="messages-icon" src="assets/messages.png">
       </button>
-      <button class="settings-button">
+      <button class="settings-button" aria-label="View settings">
         <img class="settings-icon" src="assets/settings.png">
       </button>
     </section>
     <section class="dashboard-header">
       <article class="user-info">
         <h1>Bob Dingus</h1>
-        <img class="badge-icon" src="assets/badge-icon.png">
+        <img class="badge-icon" src="assets/badge-icon.png" aria-hidden="true">
         <p>Level 5 • <a href="#">See Ratings</a></p>
       </article>
       <article class="dashboard-buttons">
-        <button class="online-button"><span class="online-dot">•</span>ONLINE</button>
-        <button class="add-bookmark-button">
-          <img src="assets/bookmark.png" alt="Add bookmark">
+        <button class="online-button" aria-label="User status"><span class="online-dot">•</span>ONLINE</button>
+        <button class="add-bookmark-button" aria-label="Add a bookmark">
+          <img src="assets/bookmark.png" aria-hidden="true">
         </button>
-        <button class="add-note-button">
-          <img src="assets/note.png" alt="Add note">
+        <button class="add-note-button" aria-label="Add a note">
+          <img src="assets/note.png" aria-hidden="true">
         </button>
-        <button class="add-rating-button">
-          <img src="assets/rating.png" alt="Add rating">
+        <button class="add-rating-button" aria-label="Add a rating">
+          <img src="assets/rating.png" aria-hidden="true">
         </button>
       </article>
     </section>
-    <nav class="dashboard-nav">
+    <nav class="dashboard-nav" aria-label="Options menu">
       <ul>
-        <li class="selected">Summary<img src="assets/drop-down.png"></li>
+        <li class="selected">Summary<img src="assets/drop-down.png" alt="Dashboard link menu"></li>
         <li class="not-selected">Current Book</li>
         <li class="not-selected">Reviews</li>
         <li class="not-selected">Bookmarks</li>
@@ -86,10 +84,9 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="charts">
-      <svg class="piechart current-book-completed" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-pages-read">
+      <svg class="piechart total-pages-read" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-pages-read" aria-label="Total pages read">
         <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
         <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2a80b9" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="75"></circle>
@@ -102,7 +99,7 @@
           </text>
         </g>
       </svg>
-      <svg class="piechart total-books-read" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-books-read">
+      <svg class="piechart total-books-read" width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-books-read" aria-label="Total books read">
         <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
         <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#F26101" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="75"></circle>
@@ -115,7 +112,7 @@
           </text>
         </g>
       </svg>
-      <svg class="piechart total-reviews-written"  width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-reviews-written">
+      <svg class="piechart total-reviews-written"  width="100%" height="75%" viewBox="0 0 42 42" aria-describedby="total-reviews-written" aria-label="Total reviews written">
         <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
         <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#059D8E" stroke-width="3" stroke-dasharray="73 27" stroke-dashoffset="75"></circle>
@@ -128,11 +125,11 @@
           </text>
         </g>
       </svg>
-      <article class="bar-graph">
-        <p class="bar-graph-label left-label num-books-1">1</p>
-        <p class="bar-graph-label left-label num-books-2">2</p>
-        <p class="bar-graph-label left-label num-books-3">3</p>
-        <p class="bar-graph-label left-label num-books-4">4</p>
+      <article class="bar-graph" aria-labelledby="bargraph-label">
+        <p class="bar-graph-label left-label num-books-1" aria-hidden="true">1</p>
+        <p class="bar-graph-label left-label num-books-2" aria-hidden="true">2</p>
+        <p class="bar-graph-label left-label num-books-3" aria-hidden="true">3</p>
+        <p class="bar-graph-label left-label num-books-4" aria-hidden="true">4</p>
         <div class="bar-graph-col col-jan"></div>
         <div class="bar-graph-col-background bar1"></div>
         <div class="bar-graph-col col-feb"></div>
@@ -157,33 +154,33 @@
         <div class="bar-graph-col-background bar11"></div>
         <div class="bar-graph-col col-dec"></div>
         <div class="bar-graph-col-background bar12"></div>
-        <p class="bar-graph-label label-jan">J</p> 
-        <p class="bar-graph-label label-feb">F</p>
-        <p class="bar-graph-label label-mar">M</p>
-        <p class="bar-graph-label label-apr">A</p>
-        <p class="bar-graph-label label-may">M</p>
-        <p class="bar-graph-label label-jun">J</p>
-        <p class="bar-graph-label label-jul">J</p>
-        <p class="bar-graph-label label-aug">A</p>
-        <p class="bar-graph-label label-sep">S</p>
-        <p class="bar-graph-label label-oct">O</p>
-        <p class="bar-graph-label label-nov">N</p>
-        <p class="bar-graph-label label-dec">D</p>
+        <p class="bar-graph-label label-jan" aria-hidden="true"</p> 
+        <p class="bar-graph-label label-feb" aria-hidden="true">F</p>
+        <p class="bar-graph-label label-mar" aria-hidden="true">M</p>
+        <p class="bar-graph-label label-apr" aria-hidden="true">A</p>
+        <p class="bar-graph-label label-may" aria-hidden="true">M</p>
+        <p class="bar-graph-label label-jun" aria-hidden="true">J</p>
+        <p class="bar-graph-label label-jul" aria-hidden="true">J</p>
+        <p class="bar-graph-label label-aug" aria-hidden="true">A</p>
+        <p class="bar-graph-label label-sep" aria-hidden="true">S</p>
+        <p class="bar-graph-label label-oct" aria-hidden="true">O</p>
+        <p class="bar-graph-label label-nov" aria-hidden="true">N</p>
+        <p class="bar-graph-label label-dec" aria-hidden="true">D</p>
       </article>
-      <button class="piechart-button">TOTALS - Out of 85 books on your list</button>
-      <button class="bargraph-button">BOOKS/MONTH</button>
+      <button class="piechart-button" aria-label="Total completed pages, books, and reviews">TOTALS - Out of 85 books on your list</button>
+      <button class="bargraph-button" id="bargraph-label" aria-label="Total books read per month">BOOKS/MONTH</button>
     </section>
     <div class="divider">
-      <hr class="left">
-      <button><img src="assets/up-arrow.png"></button>
-      <hr class="right">
+      <hr class="left" aria-hidden="true">
+      <button><img src="assets/up-arrow.png" aria-label="Collapse charts"></button>
+      <hr class="right" aria-hidden="true">
     </div>
     <section class="current-book-review">
       <table class="book-review">
         <tr class="table-heading-row">
           <th class="table-column-1">BOOK REVIEW</th>
           <th class="table-column-2">
-            <button class="edit-book-review-button"><img src="assets/edit-icon.png" alt="Edit icon">EDIT</button>
+            <button class="edit-book-review-button"><img src="assets/edit-icon.png" aria-hidden="true"">EDIT</button>
           </th>
         </tr>
         <tr>
@@ -217,29 +214,29 @@
     <section class="social">
       <div class="social-buttons-container">
         <button class="social-media-button facebook-button">
-          <img src="assets/facebook.png">Share on Facebook
+          <img src="assets/facebook.png" aria-hidden="true">Share on Facebook
         </button>
         <button class="social-media-button twitter-button">
-          <img src="assets/twitter.png">Share on Twitter
+          <img src="assets/twitter.png" aria-hidden="true">Share on Twitter
         </button>
         <button class="social-media-button instagram-button">
-          <img src="assets/instagram.png">Share on Instagram
+          <img src="assets/instagram.png" aria-hidden="true">Share on Instagram
         </button>
       </div>
       <article class="share-links start-bookclub">
-        <img class="bookclub-icon" src="assets/book-clubs.png">
+        <img class="bookclub-icon" src="assets/book-clubs.png" aria-hidden="true">
         <h3>Start a bookclub</h3>
         <p>Depths superiority insofar hope burying justice law good.</p>
-        <input class="start-bookclub-link" type="textbox" value="http://www.binder.com/share-with-friends"/>
-        <button class="copy-bookclub-link">Copy</button>
+        <input class="start-bookclub-link" type="textbox" value="http://www.binder.com/share-with-friends" aria-hidden="true"/>
+        <button class="copy-bookclub-link" aria-label="Copy link to start a bookclub">Copy</button>
       </article>
-      <hr>
+      <hr aria-hidden="true"/>
       <article class="share-links share-with-friend">
-        <img class="email-icon" src="assets/messages.png">
+        <img class="email-icon" src="assets/messages.png" aria-hidden="true">
         <h3>Share with friend</h3>
         <p>Battle of salvation love truth will holiest.</p>
-        <input class="share-with-friend-link" type="textbox" value="http://www.binder.com/share-with-friends"/>
-        <button class="email-to-friend-button">Copy</button>
+        <input class="share-with-friend-link" type="textbox" value="http://www.binder.com/share-with-friends" aria-hidden="true"/>
+        <button class="email-to-friend-button" aria-label="Copy link to share your book with friends">Copy</button>
       </article>
     </section>
   </main>

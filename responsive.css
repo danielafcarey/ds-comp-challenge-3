@@ -56,7 +56,7 @@
     height: 38%;
   }
 
-  .current-book-completed {
+  .total-pages-read {
     grid-area: 1 / 1 / 2 / 2;
   }
 
